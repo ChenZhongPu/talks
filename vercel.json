@@ -1,0 +1,19 @@
+{
+  "github": {
+    "enabled": false
+  },
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/2024/agi/(.*)",
+      "destination": "/2024/agi/index.html",
+      "statusCode": 200
+    },
+    {
+      "source": "/",
+      "destination": "https://github.com/ChenZhongPu/talks",
+      "statusCode": 302
+    }
+  ]
+}
