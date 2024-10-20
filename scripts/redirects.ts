@@ -47,29 +47,15 @@ interface RedirectItem {
 const redirects = bases.flatMap(({ base, pdfFile, dir }) => {
   const parts: RedirectItem[] = [];
 
-  if (pdfFile) {
-    parts.push({
-      source: `${base}pdf`,
-      destination: `https://github.com/PassionZale/talks/blob/main/${dir}/${pdfFile}?raw=true`,
-      statusCode: 302,
-    });
-
-    parts.push({
-      source: `/${dir}/pdf`,
-      destination: `https://github.com/PassionZale/talks/blob/main/${dir}/${pdfFile}?raw=true`,
-      statusCode: 302,
-    });
-  }
-
   parts.push({
     source: `${base}src`,
-    destination: `https://github.com/PassionZale/talks/tree/main/${dir}`,
+    destination: `https://github.com/ChenZhongPu/talks/tree/main/${dir}`,
     statusCode: 302,
   });
 
   parts.push({
     source: `${dir}`,
-    destination: `https://talks.lovchun.com${base}`,
+    destination: `https://talks.zhongpu.info${base}`,
     statusCode: 301,
   });
 

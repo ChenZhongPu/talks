@@ -65,7 +65,7 @@ mdc: true
 
 ## <span class="text-red">一、生成式AI到底是什么？</span>
 ## 二、如何使用大模型？
-## 三、模型、数据与算力
+## 三、模型和数据
 
 ----
 
@@ -105,6 +105,20 @@ image: Hundt.jpg
 - 了解其发展趋势及应用场景
 
 来源：https://wiktenauer.com/wiki/Michael_Hundt
+
+---
+
+## 真实案例：让Claude写一个网站
+
+<div class="flex justify-center items-center h-220px mt-8px">
+    <img src="random.png" class="h-full" alt="Function"/>
+</div>
+
+https://roll.zhongpu.info/
+
+<div class="flex justify-center items-center h-160px mt-8px">
+    <img src="roll.png" class="h-full" alt="Function"/>
+</div>
 
 ---
 
@@ -175,32 +189,44 @@ flowchart LR
     three --> four
 ```
 
-上述过程就是一个<span class="text-red">语言模型（Language Model）</span>。
+上述过程就是一个<span class="text-red">语言模型（Language Model）</span>：$y_t = argmax_{y\in V}P(y|y_{t-1}, y_{t-2}, \dots, y_1)$
+
+<Youtube id="ujbWCzhIPok" width="800" height="380" />
+
+---
+layout: image-right
+image: fine.png
+---
 
 ## 生成式AI也不是今天才有的
 
 早在2006年，就出现了谷歌翻译。
 
-<div class="flex justify-center items-center h-200px mt-8px">
+<div class="flex justify-center items-center h-140px mt-8px">
     <img src="google.png" class="h-full" alt="Article"/>
 </div>
 
-
-----
+<v-click>
 
 ## 如今的生成式AI有什么不同？
 
-> 语言模型的范式从”预训练-传统微调“转向”大模型-提示工程“
+> 语言模型的范式从「预训练-传统微调」转向「大模型-提示工程」
 
 大型预训练模型已经学到了丰富的语言表示，因此具备强大的生成能力，能够适应多种任务。通过调整输入<span class="text-red">提示</span>，可以引导模型执行各种任务，而不需要为每个任务单独训练一个模型。
 
-<v-click>
+</v-click>
+
+----
+
+## 提示工程范式
 
 <div class="flex justify-center items-center h-360px mt-8px">
-    <img src="use-llm.png" class="h-full" alt="Article"/>
+    <img src="p.png" class="h-full" alt="Article"/>
 </div>
 
-</v-click>
+> Prompt engineering is the process of iterating a generative AI prompt to improve its accuracy and effectiveness.
+
+图片来源：https://arxiv.org/pdf/2107.13586
 
 ---
 
@@ -208,7 +234,7 @@ flowchart LR
 
 ## 一、生成式AI到底是什么？
 ## <span class="text-red">二、如何使用大模型？</span>
-## 三、模型、数据与算力
+## 三、模型和数据
 
 ---
 
@@ -456,7 +482,7 @@ LLaMA2提出<span class="text-red">Quality is all you need</span>的观点，指
 
 ## 一、生成式AI到底是什么？
 ## 二、如何使用大模型？
-## <span class="text-red">三、模型、数据与算力</span>
+## <span class="text-red">三、模型和数据</span>
 
 ---
 layout: two-cols
@@ -579,32 +605,77 @@ flowchart TD
 来源：https://qwenlm.github.io/blog/qwen2.5/
 
 ---
-
-### 模型的数据来源
-
-<div class="flex justify-center items-center h-260px mt-8px">
-    <img src="data-source.png" class="h-full" alt="Data Source"/>
-</div>
-
-<div class="flex justify-center items-center h-200px mt-8px" v-click>
-    <img src="dataset.png" class="h-full" alt="Data Source"/>
-</div>
-
+layout: image-right
+image: r.png
 ---
 
-### 模型参数
+### 数据到底是什么？
 
-<div class="flex justify-center items-center h-220px mt-8px">
+输入的文本经过分词算法得到长度为$n$的词元（Token）序列，再进一步得到向量序列$\mathbb{R}^{n \times d}$。
+
+<div class="flex justify-center items-center h-240px mt-8px">
+    <img src="token.png" class="h-full" alt="Data Source"/>
+</div>
+
+来源：https://platform.openai.com/tokenizer
+
+---
+layout: image-right
+image: attention.png
+---
+
+## 模型及参数
+
+<div class="flex justify-center items-center h-200px mt-8px">
     <img src="model-size.png" class="h-full" alt="Parameters"/>
 </div>
 
 最新的Llama 3.1有405B参数的版本；华为盘古模型有1万亿参数的版本。
 
-
-<div class="flex justify-center items-center h-200px mt-8px" v-click>
-    <img src="gpt2.png" class="h-full" alt="Parameters"/>
+<div class="flex justify-center items-center h-200px mt-8px">
+    <img src="transformer.png" class="h-full" alt="Parameters"/>
 </div>
 
 ---
 
 ### 涌现
+
+> An ability is emergent if it is not present in smaller models but is present in larger models.
+
+<div class="flex justify-center items-center h-320px mt-8px">
+    <img src="emergent.png" class="h-full" alt="Parameters"/>
+</div>
+
+图片来源：https://arxiv.org/pdf/2206.07682
+
+---
+
+### 算力
+
+```mermaid {scale: 0.8}
+xychart-beta horizontal
+    title "二氧化碳排放量"
+    x-axis ["NY-SF Round Trip", "Man Living Per Year", "US Living Per Year", "Car Lifetime", "LM Training"]
+    y-axis "KG" 800 --> 80000
+    bar [900, 5000, 16400, 57152, 75200]
+```
+
+> llama 3 estimated training cost of up to $640 million.
+
+---
+
+# One More Thing
+
+## GitHub Copilot.
+
+
+<SlidevVideo v-click autoplay controls>
+  <!-- Anything that can go in an HTML video element. -->
+  <source src="https://github.githubassets.com/assets/hero-lg-6a98e47708e8.mp4" type="video/mp4" />
+</SlidevVideo>
+
+---
+layout: end
+---
+
+# Q&A

@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2024/agi/ --out ../../dist/2024/agi",
-    "export": "slidev export --per-slide --output ../2024-09-16-agi.pdf"
+    "build": "slidev build --base /2024/agi/ --out ../../dist/2024/agi"
   }
 }
