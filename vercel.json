@@ -6,18 +6,13 @@
   "outputDirectory": "dist",
   "redirects": [
     {
-      "source": "/2024/agi/src",
-      "destination": "https://github.com/ChenZhongPu/talks/tree/main/2024-09-16",
-      "statusCode": 302
-    },
-    {
-      "source": "2024-09-16",
-      "destination": "https://talks.zhongpu.info/2024/agi/",
-      "statusCode": 301
-    },
-    {
       "source": "/2024/agi/(.*)",
       "destination": "/2024/agi/index.html",
+      "statusCode": 200
+    },
+    {
+      "source": "/2025/green/(.*)",
+      "destination": "/2025/green/index.html",
       "statusCode": 200
     },
     {
