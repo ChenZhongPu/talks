@@ -2,8 +2,6 @@
 
 Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 
----
-
 ## 2024
 
 - [生成式人工智能](https://talks-mu.vercel.app/2024/agi/)
