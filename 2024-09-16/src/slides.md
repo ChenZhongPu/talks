@@ -89,10 +89,8 @@ mdc: true
 </div>
 
 ---
-
 layout: image-right
-image: Hundt.jpg
-
+image: Hundt.jpg 
 ---
 
 ## 大人，时代变了！
@@ -144,13 +142,11 @@ $$f(x_1, x_2) = x_1^2 + 5x_2 - 6$$
 </v-click>
 
 ---
-
 layout: image-right
 image: /network.png
-
 ---
 
-### 参数（权重）示意图
+### 参数（权重）示意图 
 
 $$y_j = f\left( \sum_{i=1}^{n} w_{ji} x_i + b_j \right)$$
 
@@ -195,10 +191,8 @@ flowchart LR
 <Youtube id="ujbWCzhIPok" width="800" height="380" />
 
 ---
-
 layout: image-right
 image: fine.png
-
 ---
 
 ## 生成式AI也不是今天才有的
@@ -542,8 +536,8 @@ flowchart TD
 </v-click>
 
 ---
-
-## layout: two-cols
+layout: two-cols
+---
 
 ## 模型的训练过程
 
@@ -601,10 +595,8 @@ flowchart TD
 来源：https://qwenlm.github.io/blog/qwen2.5/
 
 ---
-
 layout: image-right
 image: /r.png
-
 ---
 
 ### 数据到底是什么？
@@ -618,10 +610,8 @@ image: /r.png
 来源：https://platform.openai.com/tokenizer
 
 ---
-
 layout: image-right
 image: /attention.png
-
 ---
 
 ## 模型及参数
@@ -674,7 +664,6 @@ xychart-beta horizontal
 </SlidevVideo>
 
 ---
-
-## layout: end
-
+layout: end
+---
 # Q&A
