@@ -16,6 +16,26 @@
       "statusCode": 200
     },
     {
+      "source": "/2025/rag/(.*)",
+      "destination": "/2025/rag/index.html",
+      "statusCode": 200
+    },
+    {
+      "source": "/2024/agi",
+      "destination": "/2024/agi/index.html",
+      "statusCode": 200
+    },
+    {
+      "source": "/2025/green",
+      "destination": "/2025/green/index.html",
+      "statusCode": 200
+    },
+    {
+      "source": "/2025/rag",
+      "destination": "/2025/rag/index.html",
+      "statusCode": 200
+    },
+    {
       "source": "/",
       "destination": "https://github.com/ChenZhongPu/talks",
       "statusCode": 302

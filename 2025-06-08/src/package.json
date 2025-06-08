@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2025/rag/ --out ../../dist/2025/rag"
+  }
+}
