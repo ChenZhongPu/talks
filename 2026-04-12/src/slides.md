@@ -385,7 +385,7 @@ https://chat.deepseek.com/share/prqeih81lc7mv5vnze
   <div class="flex flex-col items-center">
     <div class="w-full bg-gray-100 rounded-xl shadow-inner border border-gray-200 overflow-hidden">
       <img 
-        src="./claude.png" 
+        src="/claude.png" 
         alt="Claude Demo" 
         class="w-full max-h-[420px] object-contain mx-auto" 
       />
