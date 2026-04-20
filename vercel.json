@@ -26,6 +26,11 @@
       "statusCode": 200
     },
     {
+      "source": "/2026/teaching/(.*)",
+      "destination": "/2026/teaching/index.html",
+      "statusCode": 200
+    },
+    {
       "source": "/2024/agi",
       "destination": "/2024/agi/index.html",
       "statusCode": 200
@@ -43,6 +48,11 @@
     {
       "source": "/2025/advanced-database",
       "destination": "/2025/advanced-database/index.html",
+      "statusCode": 200
+    },
+    {
+      "source": "/2026/teaching",
+      "destination": "/2026/teaching/index.html",
       "statusCode": 200
     },
     {

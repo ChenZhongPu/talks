@@ -12,3 +12,6 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 - [大模型高阶应用：关键技术](https://talks-mu.vercel.app/2025/rag/)
 - [高级数据库](https://talks-mu.vercel.app/2025/advanced-database/)
 
+## 2026
+
+- [AI赋能中小学教学](https://talks-mu.vercel.app/2026/teaching/)

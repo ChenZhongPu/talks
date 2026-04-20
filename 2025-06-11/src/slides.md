@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://green-img.f2ee.com/edu/bg.jpg
+background: bg.jpg
 title: 高级数据库技术
 info: |
   ## Advanced Database Technologies

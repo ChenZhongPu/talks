@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://green-img.f2ee.com/edu/bg.jpg
+background: bg.jpg
 title: 大模型高阶应用——关键技术
 info: |
   ## AI on RAG

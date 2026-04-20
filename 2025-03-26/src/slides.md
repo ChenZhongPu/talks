@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://green-img.f2ee.com/edu/bg.jpg
+background: bg.jpg
 title: 基于大模型技术的新能源低碳提案自动化生成
 info: |
   ## AI on Green Talking
